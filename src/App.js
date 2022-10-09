@@ -1,5 +1,4 @@
 import {Router, Route, Routes, Link, useLocation} from 'react-router-dom';
-
 import './App.css';
 import Home from './components/home';
 import Products from './components/products';
