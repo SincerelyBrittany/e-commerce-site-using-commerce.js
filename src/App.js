@@ -1,12 +1,12 @@
 import {Router, Route, Routes, Link, useLocation} from 'react-router-dom';
 import './App.css';
-import Home from './components/home';
-import Products from './components/products';
-import About from './components/about';
-import Cart from './components/cart';
-import Login from './components/login';
-import Signup from './components/singup';
-import Contact from './components/contact';
+import Home from './components/home/Home';
+import Products from './components/products/Products';
+import About from './components/about/About';
+import Cart from './components/cart/Cart';
+import Login from './components/auth/login/Login';
+import Signup from './components/auth/signup/Signup';
+import Contact from './components/contact/Contact';
 
 
 const App = () => {
