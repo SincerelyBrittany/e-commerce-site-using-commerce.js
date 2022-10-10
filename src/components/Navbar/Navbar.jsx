@@ -7,7 +7,12 @@ import Icon from '../../assets/img/shopping-logo-pngrepo-com.png';
 
 const CustomNavbar = () => {
   return (
-    <Navbar bg="light" variant="light" collapseOnSelect expand="md">
+    <Navbar
+      className={style._bg_nav}
+      variant="light"
+      collapseOnSelect
+      expand="md"
+    >
       <Container>
         <Navbar.Brand href="/">
           <img src={Icon} className={style.brand_icon} alt="ecommerce site" />{' '}
