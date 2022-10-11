@@ -10,12 +10,12 @@ Thank you for your interest in contributing to e-commerce-site-using-commerce.js
 
 # Getting Started
 
-1. First you make a fork of the repo so that you can use your fork to update the project. 1. create a e-commerce directory by running `mkdir e-commerce` 
-2. cd into the e-commerce directory by running `cd e-commerce ` 
-3. Clone the project to your local terminal by running git clone `git@github.com:{YOUR_GITHUB_USERNAME}/e-commerce-site-using-commerce.js.git` 
-4. cd into the e-commerce frontend directory by running `cd e-commerce-site-using-commerce.js` 
-5. Now run `npm install` to install all of the project dependencies. 
-6. Run `npm install && npm start` and go to http://localhost:3000 to see the application.
+* First you make a fork of the repo so that you can use your fork to update the project. 1. create a e-commerce directory by running `mkdir e-commerce` 
+* cd into the e-commerce directory by running `cd e-commerce ` 
+* Clone the project to your local terminal by running git clone `git@github.com:{YOUR_GITHUB_USERNAME}/e-commerce-site-using-commerce.js.git` 
+* cd into the e-commerce frontend directory by running `cd e-commerce-site-using-commerce.js` 
+* Now run `npm install` to install all of the project dependencies. 
+* Run `npm install && npm start` and go to http://localhost:3000 to see the application.
 
 # How to Contribute
 
@@ -25,24 +25,24 @@ If you want to get started contributing code to this project but don't know exac
 
 # How To Contribute - Set Up
 
-2. Now that you are inside the frontend directory, you need to create a branch based off the development branch.
-    1. Run: `git checkout development` 
-    2. Confirm you are on the development branch by running `git status`
-    3. Create a branch based off the development branch by running - git checkout -b `branch-name`
-    4. Make your changes - commit often using [commit best practices][best_practices].
-    5. Make sure to add test to all of your changes, when applicable. 
+* Now that you are inside the frontend directory, you need to create a branch based off the development branch.
+    * Run: `git checkout development` 
+    * Confirm you are on the development branch by running `git status`
+    * Create a branch based off the development branch by running - git checkout -b `branch-name`
+    * Make your changes - commit often using [commit best practices][best_practices].
+    * Make sure to add test to all of your changes, when applicable. 
 
 [best_practices]: https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines
 
 
 # How To Contribute - Pushing your changes
 
-1. After adding your code changes you will need to add and commit your changes.
-   1. Run `git status` - to see the files you changed and confirm thats what you want.
-   2. Run `git add .` to add all of the files or `git add <file name>` to add a specific file.
-   3. Once you know and added what files you want to commit. Commit your changes by running `git commit -m "[#<issue_number>]<commit_type>:description"`
-        *  **Your final commit should be formatted like this: #15(docs)-updatesreadme**
-        *  The issue number can be found on the title of the issue you were assigned.
+* After adding your code changes you will need to add and commit your changes.
+   * Run `git status` - to see the files you changed and confirm thats what you want.
+   * Run `git add .` to add all of the files or `git add <file name>` to add a specific file.
+   * Once you know and added what files you want to commit. Commit your changes by running `git commit -m "[#<issue_number>]<commit_type>:description"`
+        * **Your final commit should be formatted like this: #15(docs)-updatesreadme**
+        * The issue number can be found on the title of the issue you were assigned.
         * The commit_types are:
              * (feat): (new feature for the user, not a new feature for build script)
              * (fix: (bug fix for the user, not a fix to a build script)
@@ -52,8 +52,8 @@ If you want to get started contributing code to this project but don't know exac
              * (test): (adding missing tests, refactoring tests; no production code change)
              * (chore): (updating grunt tasks etc; no production code change)
         *  The description/name is the name or title descripting the changes you made.
-   4. Push your changes to your forked repo by running `git push --set-upstream origin <branch name>`
-   5. On Github create a pull request, all pull requests _must_ target the `development` branch of the
+   * Push your changes to your forked repo by running `git push --set-upstream origin <branch name>`
+   * On Github create a pull request, all pull requests _must_ target the `development` branch of the
    repository.
 
 # IMPORTANT BEFORE MAKING PULL REQUEST 
