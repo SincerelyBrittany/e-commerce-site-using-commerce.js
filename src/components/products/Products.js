@@ -1,28 +1,20 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import cartIcon from "../../assets/img/cart.png";
 import "./Products.css";
-import { useNavigate } from "react-router-dom";
 
 const Products = (props) => {
-  const [products, setProducts] = React.useState();
-
-  const getProducts = async () => {
-    fetch("https://dummyjson.com/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data.products));
+  const routeChange = (itemId) => {
+    return `/products/` + itemId;
   };
-  React.useEffect(() => {
-    getProducts();
-  }, []);
-  const navigate = useNavigate();
 
   return (
     <div>
       <Container>
         <Row>
-          {products ? (
-            products.map((item) => (
+          {props.product ? (
+            props.product.map((item) => (
               <Col>
                 <div className="product-card">
                   <div className="product-image">
@@ -30,16 +22,16 @@ const Products = (props) => {
                       <img
                         src={item.images[0]}
                         className="image-overlay"
-                        alt={products.title}
+                        alt={props.product.title}
                       />
                     )}
-                    <Button
-                      variant="outline-primary"
+                    <Link
+                      to={routeChange(item.id)}
                       className="product-button"
-                      onClick={() => navigate("/products/" + item.id)}
+                      state={{ ProductId: item }}
                     >
-                      View
-                    </Button>
+                      <Button variant="outline-primary">View </Button>
+                    </Link>
                   </div>
                   <div className="product-title">{item.title}</div>
                   <div className="bottom-wrapper">
